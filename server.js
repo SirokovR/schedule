@@ -7,6 +7,3 @@ app.get('/*', function(req,res) {
     '/dist/schedule/index.html'));});
 app.listen(process.env.PORT || 8080);
 
-
-/*
-test*/
