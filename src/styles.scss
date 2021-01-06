@@ -1,10 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
-
-root {
-  --primari-color:#dc3545;
-  --darck-color: #333333;
+:root {
+  --primary-color: #dc3545;
+  --dark-color: #333333;
   --light-color: #f4f4f4;
 }
 
@@ -23,17 +21,18 @@ body {
 }
 
 a {
-  color: var(--primari-color);
-  text-decoration: none;}
+  color: var(--primary-color);
+  text-decoration: none;
 
-a:hover {
-  color: #666;
+  &:hover {
+    color: #666;
+  }
 }
-
 
 ul {
   list-style: none;
 }
+
 
 input {
   display: block;
@@ -45,18 +44,16 @@ input {
   margin-bottom: .5rem;
 }
 
-
 .container {
   max-width: 1100px;
   margin: auto;
   overflow: hidden;
-  padding: 0.2rem;
+  padding: 0 2rem;
 }
 
 table th {
   background: var(--light-color);
 }
-
 
 .btn {
   display: inline-block;
@@ -68,17 +65,17 @@ table th {
   cursor: pointer;
   margin-right: .5rem;
   transition: opacity .2s;
-  outline: 0;
+  outline: none;
 
   &:disabled {
-  background: var(--darck-color);
-  color: #fff;
-  cursor: not-allowed;
-   }
+    background: var(--dark-color);
+    color: #fff;
+    cursor: not-allowed;
+  }
 
-   &:hover:not(:disabled) {
-  opacity: .8;
-    }
+  &:hover:not(:disabled) {
+    opacity: .8;
+  }
 }
 
 .btn-block {
@@ -87,7 +84,7 @@ table th {
 }
 
 .btn-primary {
-  background: var(--primari-color);
+  background: var(--primary-color);
   color: #fff;
 }
 
